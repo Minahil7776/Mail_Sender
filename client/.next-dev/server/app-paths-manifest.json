@@ -1,0 +1,7 @@
+{
+  "/campaigns/new/page": "app/campaigns/new/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/contacts/page": "app/contacts/page.js",
+  "/login/page": "app/login/page.js",
+  "/admin/page": "app/admin/page.js"
+}
