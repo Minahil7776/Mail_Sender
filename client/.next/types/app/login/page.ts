@@ -1,8 +1,8 @@
-// File: C:\Users\minah\Downloads\mailer\client\app\campaigns\page.js
-import * as entry from '../../../../app/campaigns/page.js'
+// File: C:\Users\minah\Downloads\mailer\client\app\login\page.js
+import * as entry from '../../../../app/login/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
-type TEntry = typeof import('../../../../app/campaigns/page.js')
+type TEntry = typeof import('../../../../app/login/page.js')
 
 // Check that the entry is a valid entry
 checkFields<Diff<{
