@@ -2,7 +2,12 @@ require('dotenv').config();
 const express = require('express'), cors = require('cors'), mongoose = require('mongoose'), bcrypt = require('bcryptjs');
 const { User } = require('./models');
 const app = express();
-app.use(cors({ origin: process.env.CLIENT_URL || '*' }));
+const CLIENT_URL = (process.env.CLIENT_URL || '*').replace(/\/$/, '');
+
+app.use(cors({
+  origin: CLIENT_URL,
+  credentials: true
+}));
 app.use(express.json({ limit: '5mb' }));
 app.get('/api/unsub', async (req, res) => {
   const { e = '', t = '' } = req.query;
